@@ -1,0 +1,217 @@
+# ToyTalk Category V3.1
+{
+    "type": "main",
+    "abbreviation": "",
+    "entries": [
+        {
+            "id": "0b74ee80-f407-4c0c-96e6-e1d7682d6560",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "1fd30a41-6fd0-4c41-a92b-7557e4d5b933",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "f46263cd-47d4-4a82-b706-688365b98802",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        },
+        {
+            "id": "2fb8bc6c-bb96-4ef0-a340-cf3bd831b202",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_no_op",
+                "behavior_params": {
+                    "name": "Not In One Shot Mode"
+                },
+                "condition": "flag_is_not_set in_one_shot_mode"
+            }
+        },
+        {
+            "id": "32f0c2c4-6ffc-41b9-a9c4-0a5f843af075",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_switch_activity",
+                "behavior_params": {
+                    "id": "390e5790-6953-40d9-8e8b-1d53cafd601f"
+                }
+            }
+        },
+        {
+            "id": "4295e1be-f8d9-4ffe-bca2-19159173842a",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "9cf1497b-aa71-413a-af41-9575a3504274",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        },
+        {
+            "id": "59a4b88e-4d83-4835-bb45-4129d00e1556",
+            "type": "interjections",
+            "metadata": {}
+        },
+        {
+            "id": "5e572d54-74e5-4ae7-babf-b23158e11502",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "e15a690a-65e5-4e6f-b3ad-4540aafc7228",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        },
+        {
+            "id": "72903028-01df-42fa-9f53-7cb60a498009",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "a4ab9598-b63f-491f-9661-43121bb3830a",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        },
+        {
+            "id": "828a8233-a3c6-43fb-9e44-e0b851dbef4a",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "8d04e50a-1c56-4c20-9cb1-732c36fd2d5c",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "90c1140f-b4c2-4506-8db5-a84dadde2366",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "977f474c-95d5-46be-8a3a-686040bceb91",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_switch_activity",
+                "behavior_params": {
+                    "id": "390e5790-6953-40d9-8e8b-1d53cafd601f"
+                }
+            }
+        },
+        {
+            "id": "9d6b9ece-be8b-4a46-b25a-704311377097",
+            "type": "event",
+            "metadata": {
+                "event_id": "event_return_from_interjection"
+            }
+        },
+        {
+            "id": "ade37140-7a79-436e-8bec-89b7086b6dbd",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "5c1d58bc-9bc5-4a7a-959f-f38619a74628",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        },
+        {
+            "id": "ba4786dc-e317-40cc-ae9f-02d1b84722bb",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "e25d34b0-4aff-4653-a553-1713eb5ffec2",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_no_op",
+                "behavior_params": {
+                    "name": "In One Shot Mode"
+                },
+                "condition": "flag_is_set in_one_shot_mode"
+            }
+        },
+        {
+            "id": "f367e2ca-990d-416f-81e3-c0630a6c2c13",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "f1e0f52a-c559-4c41-94b2-6f769d0b32c1",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        },
+        {
+            "id": "f38f9a0a-b607-4c44-a7c5-78ec9c1a355e",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_switch_activity",
+                "behavior_params": {
+                    "id": "3b126aa3-81e6-4aeb-bb60-344db049eb38"
+                }
+            }
+        },
+        {
+            "id": "fc8c879b-98e5-4338-b155-8cdcc6882008",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "b97c7aea-79b7-4095-a133-8a672199caa1",
+                "interjection_params": "no;return=yes;segue_mode=event;repeat=no"
+            }
+        }
+    ],
+    "structure": [
+        "59a4b88e-4d83-4835-bb45-4129d00e1556",
+        [
+            "fc8c879b-98e5-4338-b155-8cdcc6882008",
+            [
+                "f38f9a0a-b607-4c44-a7c5-78ec9c1a355e"
+            ]
+        ],
+        [
+            "f367e2ca-990d-416f-81e3-c0630a6c2c13"
+        ],
+        [
+            "72903028-01df-42fa-9f53-7cb60a498009",
+            [
+                "32f0c2c4-6ffc-41b9-a9c4-0a5f843af075"
+            ]
+        ],
+        [
+            "ade37140-7a79-436e-8bec-89b7086b6dbd",
+            [
+                "8d04e50a-1c56-4c20-9cb1-732c36fd2d5c"
+            ]
+        ],
+        [
+            "1fd30a41-6fd0-4c41-a92b-7557e4d5b933",
+            [
+                "828a8233-a3c6-43fb-9e44-e0b851dbef4a"
+            ]
+        ],
+        [
+            "4295e1be-f8d9-4ffe-bca2-19159173842a",
+            [
+                "90c1140f-b4c2-4506-8db5-a84dadde2366"
+            ]
+        ],
+        [
+            "5e572d54-74e5-4ae7-babf-b23158e11502",
+            [
+                "ba4786dc-e317-40cc-ae9f-02d1b84722bb"
+            ]
+        ],
+        "9d6b9ece-be8b-4a46-b25a-704311377097",
+        [
+            "e25d34b0-4aff-4653-a553-1713eb5ffec2",
+            [
+                "977f474c-95d5-46be-8a3a-686040bceb91"
+            ]
+        ],
+        [
+            "2fb8bc6c-bb96-4ef0-a340-cf3bd831b202",
+            [
+                "0b74ee80-f407-4c0c-96e6-e1d7682d6560"
+            ]
+        ]
+    ]
+}

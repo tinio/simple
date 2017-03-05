@@ -1,0 +1,137 @@
+# ToyTalk Category V3.1
+{
+    "type": "override",
+    "entries": [
+        {
+            "id": "0b74ee80-f407-4c0c-96e6-e1d7682d6560",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "Let's get back to it."
+            }
+        },
+        {
+            "id": "1fd30a41-6fd0-4c41-a92b-7557e4d5b933",
+            "metadata": {
+                "value": "Custom Amazon Intent 1"
+            }
+        },
+        {
+            "id": "2fb8bc6c-bb96-4ef0-a340-cf3bd831b202",
+            "metadata": {
+                "value": "Not In One Shot Mode"
+            }
+        },
+        {
+            "id": "32f0c2c4-6ffc-41b9-a9c4-0a5f843af075",
+            "metadata": {
+                "value": "Switch Activity"
+            }
+        },
+        {
+            "id": "4295e1be-f8d9-4ffe-bca2-19159173842a",
+            "metadata": {
+                "value": "Custom Amazon Intent B"
+            }
+        },
+        {
+            "id": "59a4b88e-4d83-4835-bb45-4129d00e1556",
+            "metadata": {}
+        },
+        {
+            "id": "5e572d54-74e5-4ae7-babf-b23158e11502",
+            "metadata": {
+                "value": "Custom Amazon Intent 3"
+            }
+        },
+        {
+            "id": "72903028-01df-42fa-9f53-7cb60a498009",
+            "metadata": {
+                "notes": "Amazon built-in Cancel Intent",
+                "value": "New Intent"
+            }
+        },
+        {
+            "id": "828a8233-a3c6-43fb-9e44-e0b851dbef4a",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "(response for custom amazon intent A)"
+            }
+        },
+        {
+            "id": "8d04e50a-1c56-4c20-9cb1-732c36fd2d5c",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "(help response)"
+            }
+        },
+        {
+            "id": "90c1140f-b4c2-4506-8db5-a84dadde2366",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "(response for custom amazon intent B)"
+            }
+        },
+        {
+            "id": "977f474c-95d5-46be-8a3a-686040bceb91",
+            "metadata": {
+                "value": "Switch Activity"
+            }
+        },
+        {
+            "id": "9d6b9ece-be8b-4a46-b25a-704311377097",
+            "metadata": {
+                "value": "Segue From Interjection and Repeat Prompt"
+            }
+        },
+        {
+            "id": "ade37140-7a79-436e-8bec-89b7086b6dbd",
+            "metadata": {
+                "notes": "Amazon built-in Help Intent",
+                "value": "New Intent 2"
+            }
+        },
+        {
+            "id": "ba4786dc-e317-40cc-ae9f-02d1b84722bb",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "(response for custom amazon intent C)"
+            }
+        },
+        {
+            "id": "e25d34b0-4aff-4653-a553-1713eb5ffec2",
+            "metadata": {
+                "value": "In One Shot Mode"
+            }
+        },
+        {
+            "id": "f367e2ca-990d-416f-81e3-c0630a6c2c13",
+            "metadata": {
+                "notes": "Amazon built-in Stop Intent",
+                "value": "New Intent 4"
+            }
+        },
+        {
+            "id": "f38f9a0a-b607-4c44-a7c5-78ec9c1a355e",
+            "metadata": {
+                "value": "Switch Activity"
+            }
+        },
+        {
+            "id": "fc8c879b-98e5-4338-b155-8cdcc6882008",
+            "metadata": {
+                "notes": "Amazon built-in Start Over Intent",
+                "value": "New Intent 3"
+            }
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+# ToyTalk Project V2.8
+{
+    "labels": [
+        "Currency Units",
+        "Duration Units",
+        "Length Units",
+        "Location",
+        "Name",
+        "Speed Units",
+        "Temperature Units",
+        "Volume Units",
+        "Weight Units"
+    ]
+}

@@ -1,0 +1,43 @@
+# ToyTalk Category V3.1
+{
+    "type": "override",
+    "entries": [
+        {
+            "id": "390e5790-6953-40d9-8e8b-1d53cafd601f",
+            "metadata": {
+                "value": "Goodbyes"
+            }
+        },
+        {
+            "id": "45b762b5-5d44-4d38-be32-130363b2c653",
+            "metadata": {
+                "value": "b7d6e3f3-3914-4fc1-b3ac-e32871dad361"
+            }
+        },
+        {
+            "id": "722215ae-d281-465f-be65-fd5d25cb9311",
+            "metadata": {
+                "value": "Exit Skill"
+            }
+        },
+        {
+            "id": "81a29c66-21eb-47fd-8643-5db100ac3370",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "Goodbye!"
+            }
+        },
+        {
+            "id": "a3c1d988-2900-4964-b3c5-50ec3d918294",
+            "metadata": {}
+        },
+        {
+            "id": "c52a143c-404b-46c1-be45-1aa0c3ceb477",
+            "metadata": {
+                "value": "Goodbye"
+            }
+        }
+    ]
+}

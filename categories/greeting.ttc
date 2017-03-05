@@ -1,0 +1,219 @@
+# ToyTalk Category V3.1
+{
+    "type": "main",
+    "abbreviation": "",
+    "entries": [
+        {
+            "id": "12e2becd-c751-4505-b9e5-4ff46eb1ea8f",
+            "type": "event",
+            "metadata": {
+                "event_id": "event_start"
+            }
+        },
+        {
+            "id": "18e13b22-7eb1-4659-b605-9931c3875f94",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "25cd0e6b-1ff9-4193-b297-caf240e2d7fd"
+            }
+        },
+        {
+            "id": "32ec329a-d6b6-4762-99b8-2c65cc63dd2f",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "alexa_home_card",
+                "behavior_params": {
+                    "large_image": "https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2015/mobile/fs-e._CB318474125_.jpg",
+                    "small_image": "https://images-na.ssl-images-amazon.com/images/G/01/kindle/dp/2015/mobile/fs-e._CB318474125_.jpg",
+                    "text": "The Best Skill Around",
+                    "title": "Welcome to Untitled Skill!"
+                }
+            }
+        },
+        {
+            "id": "3b126aa3-81e6-4aeb-bb60-344db049eb38",
+            "type": "activity",
+            "metadata": {
+                "activity_params": "default=yes;global_ruleset=yes",
+                "enabled": "yes"
+            }
+        },
+        {
+            "id": "3b28cae6-03ab-4ef7-9817-d384a6f6450e",
+            "type": "folder",
+            "metadata": {}
+        },
+        {
+            "id": "3b69e759-2b12-4f26-929b-3fb37b483cf2",
+            "type": "fallback",
+            "metadata": {}
+        },
+        {
+            "id": "430f56a2-94c1-4066-a0c0-a0dc40ac7d6c",
+            "type": "reference",
+            "metadata": {
+                "mode": "no_return",
+                "reference_id": "cc1c638b-2a76-4bf4-a5cb-9a0964ffc949"
+            }
+        },
+        {
+            "id": "49204f37-779a-4e3e-94c5-624cad8bb049",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_set_flag",
+                "behavior_params": {
+                    "flag": "FLAG_IN_ONE_SHOT_MODE"
+                }
+            }
+        },
+        {
+            "id": "68f4d342-5caf-47e2-90f2-8728511da70b",
+            "type": "fallback",
+            "metadata": {}
+        },
+        {
+            "id": "7db1c760-fb23-47ea-901e-58e9532f02cd",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "90eef0ed-f945-47c4-af97-ffccf562eebb",
+            "type": "reference",
+            "metadata": {
+                "mode": "no_return",
+                "reference_id": "f38ff117-7a62-4ec5-868c-25feeb06bdff"
+            }
+        },
+        {
+            "id": "94358c60-75ce-4adc-a147-16a9dc46d5d6",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_retry_rules"
+            }
+        },
+        {
+            "id": "ae349f03-4d2d-4b7a-8274-df88e9802722",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "b6800e1d-4031-4570-9ecc-8c5b0b6b4906",
+            "type": "intent",
+            "metadata": {
+                "intent_id": "25cd0e6b-1ff9-4193-b297-caf240e2d7fd"
+            }
+        },
+        {
+            "id": "b98e8754-56c4-41c2-a445-2ca5d4c97da9",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_retry_rules"
+            }
+        },
+        {
+            "id": "cc1c638b-2a76-4bf4-a5cb-9a0964ffc949",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "ceac5af8-6287-4676-8d9e-5bfd2a5ab07b",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "action_clear_flag",
+                "behavior_params": {
+                    "flag": "FLAG_IN_ONE_SHOT_MODE"
+                }
+            }
+        },
+        {
+            "id": "df06c872-9437-402c-950a-4392384a65d0",
+            "type": "fallback",
+            "metadata": {}
+        },
+        {
+            "id": "e8590735-6101-4c1e-a857-e942c2901acf",
+            "type": "response",
+            "metadata": {
+                "character": "1"
+            }
+        },
+        {
+            "id": "f38ff117-7a62-4ec5-868c-25feeb06bdff",
+            "type": "folder",
+            "metadata": {}
+        },
+        {
+            "id": "f5ebd49d-7ceb-4760-9747-0b3d118274ac",
+            "type": "reference",
+            "metadata": {
+                "mode": "no_return",
+                "reference_id": "ae349f03-4d2d-4b7a-8274-df88e9802722"
+            }
+        }
+    ],
+    "structure": [
+        "3b126aa3-81e6-4aeb-bb60-344db049eb38",
+        [
+            "12e2becd-c751-4505-b9e5-4ff46eb1ea8f",
+            [
+                "49204f37-779a-4e3e-94c5-624cad8bb049",
+                [
+                    "3b69e759-2b12-4f26-929b-3fb37b483cf2",
+                    [
+                        "ceac5af8-6287-4676-8d9e-5bfd2a5ab07b",
+                        [
+                            "90eef0ed-f945-47c4-af97-ffccf562eebb"
+                        ]
+                    ]
+                ]
+            ]
+        ],
+        "f38ff117-7a62-4ec5-868c-25feeb06bdff",
+        [
+            "32ec329a-d6b6-4762-99b8-2c65cc63dd2f",
+            [
+                "ae349f03-4d2d-4b7a-8274-df88e9802722",
+                [
+                    "18e13b22-7eb1-4659-b605-9931c3875f94",
+                    [
+                        "f5ebd49d-7ceb-4760-9747-0b3d118274ac"
+                    ]
+                ],
+                [
+                    "df06c872-9437-402c-950a-4392384a65d0",
+                    [
+                        "7db1c760-fb23-47ea-901e-58e9532f02cd",
+                        [
+                            "b98e8754-56c4-41c2-a445-2ca5d4c97da9"
+                        ]
+                    ]
+                ]
+            ]
+        ],
+        "3b28cae6-03ab-4ef7-9817-d384a6f6450e",
+        [
+            "cc1c638b-2a76-4bf4-a5cb-9a0964ffc949",
+            [
+                "b6800e1d-4031-4570-9ecc-8c5b0b6b4906",
+                [
+                    "430f56a2-94c1-4066-a0c0-a0dc40ac7d6c"
+                ]
+            ],
+            [
+                "68f4d342-5caf-47e2-90f2-8728511da70b",
+                [
+                    "e8590735-6101-4c1e-a857-e942c2901acf",
+                    [
+                        "94358c60-75ce-4adc-a147-16a9dc46d5d6"
+                    ]
+                ]
+            ]
+        ]
+    ]
+}

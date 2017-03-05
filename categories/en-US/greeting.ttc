@@ -1,0 +1,144 @@
+# ToyTalk Category V3.1
+{
+    "type": "override",
+    "entries": [
+        {
+            "id": "12e2becd-c751-4505-b9e5-4ff46eb1ea8f",
+            "metadata": {}
+        },
+        {
+            "id": "18e13b22-7eb1-4659-b605-9931c3875f94",
+            "metadata": {
+                "notes": "Amazon built-in repeat intent",
+                "value": "Built In Repeat"
+            }
+        },
+        {
+            "id": "32ec329a-d6b6-4762-99b8-2c65cc63dd2f",
+            "metadata": {
+                "value": "Show Home Card"
+            }
+        },
+        {
+            "id": "3b126aa3-81e6-4aeb-bb60-344db049eb38",
+            "metadata": {
+                "value": "Greeting"
+            }
+        },
+        {
+            "id": "3b28cae6-03ab-4ef7-9817-d384a6f6450e",
+            "metadata": {
+                "value": "Segue"
+            }
+        },
+        {
+            "id": "3b69e759-2b12-4f26-929b-3fb37b483cf2",
+            "metadata": {
+                "value": "(fallback)"
+            }
+        },
+        {
+            "id": "430f56a2-94c1-4066-a0c0-a0dc40ac7d6c",
+            "metadata": {
+                "value": "47c0a928-9fb3-407d-9dab-a2a3d00c254f"
+            }
+        },
+        {
+            "id": "49204f37-779a-4e3e-94c5-624cad8bb049",
+            "metadata": {
+                "value": "Set Flag: In One Shot Mode"
+            }
+        },
+        {
+            "id": "68f4d342-5caf-47e2-90f2-8728511da70b",
+            "metadata": {
+                "value": "(fallback)"
+            }
+        },
+        {
+            "id": "7db1c760-fb23-47ea-901e-58e9532f02cd",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "Sorry, I didn't get that. A, B, or C?"
+            }
+        },
+        {
+            "id": "90eef0ed-f945-47c4-af97-ffccf562eebb",
+            "metadata": {
+                "value": "8fff05b9-f688-4ea5-b875-c52f55ba08aa"
+            }
+        },
+        {
+            "id": "94358c60-75ce-4adc-a147-16a9dc46d5d6",
+            "metadata": {
+                "value": "Retry Previous Inputs"
+            }
+        },
+        {
+            "id": "ae349f03-4d2d-4b7a-8274-df88e9802722",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "Welcome to Aurelio's Alexa Skill! Would you like to talk about A, B, or C?"
+            }
+        },
+        {
+            "id": "b6800e1d-4031-4570-9ecc-8c5b0b6b4906",
+            "metadata": {
+                "notes": "Amazon built-in repeat intent",
+                "value": "New Intent 5"
+            }
+        },
+        {
+            "id": "b98e8754-56c4-41c2-a445-2ca5d4c97da9",
+            "metadata": {
+                "value": "Retry Previous Inputs"
+            }
+        },
+        {
+            "id": "cc1c638b-2a76-4bf4-a5cb-9a0964ffc949",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "What would you like to talk about now?"
+            }
+        },
+        {
+            "id": "ceac5af8-6287-4676-8d9e-5bfd2a5ab07b",
+            "metadata": {
+                "value": "Clear Flag: In One Shot Mode"
+            }
+        },
+        {
+            "id": "df06c872-9437-402c-950a-4392384a65d0",
+            "metadata": {
+                "value": "(fallback)"
+            }
+        },
+        {
+            "id": "e8590735-6101-4c1e-a857-e942c2901acf",
+            "metadata": {
+                "manual_phonemes": false,
+                "placeholder_audio": false,
+                "status": "final",
+                "value": "Would you like to talk about A, B, or C?"
+            }
+        },
+        {
+            "id": "f38ff117-7a62-4ec5-868c-25feeb06bdff",
+            "metadata": {
+                "value": "Greeting"
+            }
+        },
+        {
+            "id": "f5ebd49d-7ceb-4760-9747-0b3d118274ac",
+            "metadata": {
+                "value": "1a7502ff-5930-48a6-8caf-d58893bd4eb5"
+            }
+        }
+    ]
+}

@@ -1,0 +1,3973 @@
+# ToyTalk Project V2.8
+{
+    "intents": [
+        {
+            "id": "e166d055-0be1-4f09-8795-c698aaf5928b",
+            "inherited_intent_ids": [],
+            "name": "Ask About The Weather",
+            "negative_examples": [],
+            "output_entities": [
+                "LOCATION"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how is the weather in dublin, ireland"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what is the weather like in san francisco"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what is the weather like in san francisco, ca"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what's the weather in 94107"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "weather (in, around, by, near) [1-3=LOCATION]"
+                }
+            ]
+        },
+        {
+            "id": "01b1cc23-1fc3-4c4f-aaab-c99bb2c91ac9",
+            "inherited_intent_ids": [],
+            "name": "Bail",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(play, do, talk) [0-1] something [0] besides this"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(play, do, talk) [0-1] something [0] different"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(play, do, talk) [0-1] something [0] else"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(this, it, you) (stupid, suck, lame, boring, dull, dumb, ~bad)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "bail"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "bored"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "boring"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "i [0] (hate, dislike) [0] (this, it, you)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "i'm [0] bored"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not [0-2] like (this, it, you)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not [0-2] want (go, continue, you, this, it, do this)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "talk [0-1] (something, someone, anything) [0] else"
+                }
+            ]
+        },
+        {
+            "id": "1e5dd0ae-062a-478b-8af4-8847069ade0f",
+            "inherited_intent_ids": [],
+            "name": "Cancel Order",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(cancel, delete, void) (my, the) [0] (order, package, shipment)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(cancel, delete, void) [0] order"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(order, package, shipment) cancel [0] (it, them)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(request, ask for, initiate) [0-2] cancellation"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "forget (about, the) (order, package, shipment)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "forget [0] (about, the) [1-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "like [0] to [0] cancel"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "never [0] mind (the, my, that) (order, package, shipment)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "never [0] mind (the, my, that) [1-3]"
+                }
+            ]
+        },
+        {
+            "id": "9c87ddb9-2e19-44e2-a811-c6ac02b3c386",
+            "inherited_intent_ids": [],
+            "name": "Cheer You Up",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(cheer, lift) [0] you [0] up"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(come, cmon) get [0-1] happy"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(made, make, wanted, want, got, get) you (~laugh, smile, happy, happier, feel better, have fun, enjoy yourself)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(made, make, wanted, want, got, get) you [0-2] forget (worries, problems, sorrows, ~sad, sadness)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(put you in, change, get, give) (~good, better) mood"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(trying, wanted) make [0] it (better, easier)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "turn [0-1] frown (upsidedown, upside down)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you (need, want, use) (~laugh, smile, cheer, ~silly, silliness, pick, lift, boost, ~good time, escape)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you (seemed, seem) [0] (~sad, upset)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not (be, get, act) (~sad, down, downhearted, gloomy)"
+                }
+            ]
+        },
+        {
+            "id": "52739f48-a60c-4a48-a80c-e2c9460bf923",
+            "inherited_intent_ids": [],
+            "name": "Currency Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "CURRENCY UNITS",
+                "CURRENCY VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "$100"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 British pound sterling"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 us dollar"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "100 dollars"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(\"$\" [1=Currency Units]) [0] [number=Currency Value]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Currency Value] [0] (?us ?canadian dollars, euros, ?british ?uk pounds ?sterling, cents, \"penny\", \"pennies\", \"USD\", \"GBP\" [1=Currency Units])"
+                }
+            ]
+        },
+        {
+            "id": "f46263cd-47d4-4a82-b706-688365b98802",
+            "inherited_intent_ids": [],
+            "name": "Custom Amazon Intent A",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "*Remember that sample utterances for Amazon Intents have no pattern matching rules associated with them, every representative phrase must be complete. For example, the sample utterance “You can’t do that” will not necessarily match you “You can not do that” or “You really can’t do that”. What you write is what you match!"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"custom amazon intent 1\""
+                }
+            ]
+        },
+        {
+            "id": "2a44b93a-e484-4e9f-81ed-a1677ca72103",
+            "inherited_intent_ids": [],
+            "name": "Custom Amazon Intent Activity One",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "(*partial example list below)"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i want to do activity one"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i'll do activity one"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i will do activity one"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "let me do activity one"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "let's do activity one"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "activity one please"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "how about activity one"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "activity one"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"custom amazon intent activity one\""
+                }
+            ]
+        },
+        {
+            "id": "b0ef77b1-8262-4485-92df-b1b42ecbec38",
+            "inherited_intent_ids": [],
+            "name": "Custom Amazon Intent Activity Three",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "(*partial example list below)"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i want to do activity three"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i'll do activity three"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i will do activity three"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "let me do activity three"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "let's do activity three"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "activity three please"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "how about activity three"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "activity three"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"custom amazon intent activity three\""
+                }
+            ]
+        },
+        {
+            "id": "5b3fdd70-0271-4777-9500-00562befb21a",
+            "inherited_intent_ids": [],
+            "name": "Custom Amazon Intent Activity Two",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "(*partial example list below)"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i want to do activity two"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i'll do activity two"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "i will do activity two"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "let me do activity two"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "let's do activity two"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "activity two please"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "how about activity two"
+                },
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "activity two"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"custom amazon intent activity two\""
+                }
+            ]
+        },
+        {
+            "id": "9cf1497b-aa71-413a-af41-9575a3504274",
+            "inherited_intent_ids": [],
+            "name": "Custom Amazon Intent B",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "*Remember that sample utterances for Amazon Intents have no pattern matching rules associated with them, every representative phrase must be complete. For example, the sample utterance “You can’t do that” will not necessarily match you “You can not do that” or “You really can’t do that”. What you write is what you match!"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"custom amazon intent 2\""
+                }
+            ]
+        },
+        {
+            "id": "e15a690a-65e5-4e6f-b3ad-4540aafc7228",
+            "inherited_intent_ids": [],
+            "name": "Custom Amazon Intent C",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "*Remember that sample utterances for Amazon Intents have no pattern matching rules associated with them, every representative phrase must be complete. For example, the sample utterance “You can’t do that” will not necessarily match you “You can not do that” or “You really can’t do that”. What you write is what you match!"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"custom amazon intent 3\""
+                }
+            ]
+        },
+        {
+            "id": "a34a2280-2169-400e-aece-22aedc905a05",
+            "inherited_intent_ids": [],
+            "name": "Do Not Know",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(beats, beyond) [0] me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] ~not (decide, imagine, remember, think, answer, say)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] ~not [0-1] (have a clue, know, no, remember) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] do [0] not [0] know"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] have [0] no [0-1] clue"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] haven't [0-1] (decided, thought about, thought of, landed, made decision) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] never [0-1] (decided, thought about, thought of, landed, made decision) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] wouldn't [0] know"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] ~dunno [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[1] if [0] i [0] know"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "do [0] not [0-1] know [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "impossible [0-1] (answer, decide, know, say, respond, reply) [0-1] question [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "impossible [0-1] (answer, decide, know, say, respond, reply) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0-1] way [0-1] (me to, can) [0] (answer, decide, know, say, respond, reply) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] (clue, idea) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "unclear [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~dunno [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not (decide, decided, imagine, remember, sure, think, thought about, thought of) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] (a, have) [0-1] (clue, idea) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] (decide, imagine, remember, think, answer, say) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] (know, no) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] (know, no) answer [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] have [0-1] clue [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] sure [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0] the [0] (foggiest, slightest)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~your [0] guess [0-2] good [0-1] mine"
+                }
+            ]
+        },
+        {
+            "id": "38f1349c-831a-419d-a019-ec954fa993dd",
+            "inherited_intent_ids": [],
+            "name": "Do Not See What Want",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I ~not (see, find, locate, put [1-2] on)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not (help, helpful) me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not I need"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not I want"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not find (it, what want, look for)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not helpful"
+                }
+            ]
+        },
+        {
+            "id": "c8fbc891-8383-43b6-835e-c4d519076447",
+            "inherited_intent_ids": [],
+            "name": "Do Not Want To Purchase",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (will, shall) (pass, decline, abstain)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (will, shall) ~not (have, order, take, request)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (would, should) ~not (like, prefer)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) ~not (want, need, desire, request)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(gonna, gunna, going to) (have to [match=0+]) pass"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] (thanks, thank [0] you)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not (give, get, send, order, tell, show) [0-1] (me, us)"
+                }
+            ]
+        },
+        {
+            "id": "094c7c8f-1f16-4e75-8b40-e204fd6cfb84",
+            "inherited_intent_ids": [],
+            "name": "Do Not Worry",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(it, everything) is [0-2] (~good)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not (worry, worries, think too much, overthink, sweat, freak, lose [0] it, come [0] apart, fall [0] apart, panic, push [0-1] panic [0] button, go [0] to [0] pieces, beat [0-1] dead [0] horse)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not over (react, think, analyze, consider, scrutinize, evaluate)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you (sweat stuff, overreact, over react, overthink, over think)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you (worry, think) too much"
+                }
+            ]
+        },
+        {
+            "id": "8819f6a3-ece0-404e-a063-7b12a7a0d6e7",
+            "inherited_intent_ids": [],
+            "name": "Duration Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "DURATION UNITS",
+                "DURATION VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 second"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "100 centuries"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "3 millenia"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "5 days"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "8 hours"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Duration Value] [0] (seconds, minutes, hours, days, months, years, \"centuries\", \"century\", \"millenium\", \"millenia\" [1=Duration Units])"
+                }
+            ]
+        },
+        {
+            "id": "991b7bd9-6bc1-4c59-b4ca-def4290af323",
+            "inherited_intent_ids": [],
+            "name": "Goodbye",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(catch, see) [0] you [0] later"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(good, nice, great) [0] (to [0] see [0] you, seeing [0] you, talking [0] to [0] you)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "bye"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "ciao"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "goodbye"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "it [0-1] been [0] real"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "later [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not [0] be [0-1] stranger"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "peace [0]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "peace [0] out"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "see [0] ~you [0] (on [0-1] other [0] side, next [0] time)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "take [0] care (now, yourself, your self [match=0+])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "take [0] care [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "until [0] next [0] time [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "until [0] we [0] meet [0] again"
+                }
+            ]
+        },
+        {
+            "id": "51518488-a8c5-4dc6-89cc-0277bb0fd8bd",
+            "inherited_intent_ids": [],
+            "name": "Happy To",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(happily, gladly, with [0] pleasure) [0-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(would [0] be, it's, what [0] (an, a), complete, total) [0-2] (~happy, pleasure, honor, joy)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(would [MATCH=0-1]) (~happy, ~like) [0] to [0-7]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] anytime [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "anything [0] for [0] ~you [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "can't [0-1] think [0] of (anything, something) (better, ~like [0] more) [0-7]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "for [0] you [0] anything [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "for [0] ~you [0] anything"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] problem [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "sounds [0] (~good, great, groovy, fantastic, wonderful)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "sure [0] thing [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] got [0] it [0-1]"
+                }
+            ]
+        },
+        {
+            "id": "19cbcb4e-30af-4bd5-a8ad-3ea132e8abb3",
+            "inherited_intent_ids": [],
+            "name": "Hate Speech Pg13",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "Hitler"
+                }
+            ]
+        },
+        {
+            "id": "0b3ba5b8-2e55-4db1-b752-a0fc8c315fee",
+            "inherited_intent_ids": [],
+            "name": "Hello",
+            "negative_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "Goodbye!"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I like pizza"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "It's time to say cheerio..."
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "My favorite color is red"
+                }
+            ],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I just wanted to say hello..."
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "Oh, hello there!"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hello"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hi"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "howdy friend"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "aloha"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "bonjour"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "ciao"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "good [0] (morning, afternoon, evening)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "good [0] day"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "greetings"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hello"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hey"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hi"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hiya"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hola"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "howdy"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "sup"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "wassup"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "welcome"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0] up"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "yo"
+                }
+            ]
+        },
+        {
+            "id": "4d18ee81-6a9a-480c-804a-c0b2a0436eb7",
+            "inherited_intent_ids": [],
+            "name": "How Are You",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(how's, how are) things"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(watcha, ~what (~you, ya), ~what are ~you) up [0] to"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] ~you [0-1] alright [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] ~you [0-1] cool [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] ~you [0-1] good [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] ~you [0-1] okay [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how [0] (goes, goes it)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how [0] do [0] ~you [0] do"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how are ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how's [0] it [0] (going, hanging)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "is [0] everything [0] (~okay, ~good, alright)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~what [0-1] (happening, good, going [0] on, the [0] haps, word on street, going [0] down, up)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~what [0] up"
+                }
+            ]
+        },
+        {
+            "id": "c20d56e7-7b1d-498e-b89e-88a74012c77b",
+            "inherited_intent_ids": [],
+            "name": "I Agree",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(you're, that's) [0-1] (true, truth, accurate right, correct, factual, veracious, righteous, legitimate, dead [0] on, on [0] the [0] (money, spot), right [0] stuff, on [0] target)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "For [0] sure [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I (agree, concur, of [0-1] (same, similar) [0] mind)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (believe, know) [0-2]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (think, feel, thinking, feeling) [0-1] (same, so [0] too)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "Right [0] on [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] (absolutely, definitely, totally, totes) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] (agreed, correct, right, true, accurate) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] Amen [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] Word [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "see [0-2] eye [0] to [0] eye"
+                }
+            ]
+        },
+        {
+            "id": "aa7d41e2-3c22-4334-9b1a-3c928ef32347",
+            "inherited_intent_ids": [],
+            "name": "I Am Frustrated",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) [0] (am, are) [0-2] ~angry"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(~you, this, experience, process, situation, interaction) [0] (are, is) [0-2] (frustrating, upsetting, annoying, obnoxious, maddening, aggravating, infuriating, discouraging, disheartening, trying, insufficient, inadequate, problematic, ~not [0-1] (helping, helpful))"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "blow [0] my [0] (lid, top)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "pissing [0] me [0] off"
+                }
+            ]
+        },
+        {
+            "id": "0bcb4d51-75a0-42e4-ac69-8dcc5e6e7162",
+            "inherited_intent_ids": [],
+            "name": "I Am Sorry",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I'm sorry, I messed it up, not you."
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "No, the fault is mine."
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) I !not apologize (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) I !not feel (bad, awful, regretful, regret, remorseful, remorse, guilt, guilty, embarrassed, ashamed, terrible, lousy, horrible, wretched, vile, loathsome) (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) I !not regret [0] what [0] I [0] did (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) I [0-2] take [0] (the [0] blame, responsibility) (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) I'm [0] sorry (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) fault [0] is [0-1] mine (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) is [0-1] my [0] fault (no, not [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(no, not [MATCH=0-2]) my [0] (fault, bad)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "accept [0] my [0-1] apologies"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "forgive [0] me"
+                }
+            ]
+        },
+        {
+            "id": "4d9477f4-2217-4b98-9c71-18a1badd31a2",
+            "inherited_intent_ids": [],
+            "name": "I Disagree",
+            "negative_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I concur"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "i agree"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "that's correct"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you're correct"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you're right"
+                }
+            ],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I beg to differ"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I believe that's incorrect"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I disagree"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I don't agree"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I think you're wrong"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "You're wrong"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "allow me to contradict you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "incorrect"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "that's incorrect"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "that's wrong"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(that's, ~not [0] be, you're) [0-2] (ridiculous, wrong, ~crazy)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(think, believe, know, suspect, feel) [0-3] (wrong, incorrect, inaccurate, ~not [0] right, not [0] correct)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(~your, that) [0-2] (wrong, incorrect, inaccurate, not [0] right, not [0] correct)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (disagree, ~not [0-1] agree, ~not [0-1] believe)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] contradict [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] ~not [0-2] (agree, concur, go [0] along)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] beg [0] to [0] differ"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0-3] false [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0-3] inaccurate [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0-3] incorrect [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not (think, know, believe) [0] (~your, ~you, that, that's) [0-1] (right, correct, accurate)"
+                }
+            ]
+        },
+        {
+            "id": "32dfcca7-de10-4b98-a987-4751a7f01539",
+            "inherited_intent_ids": [],
+            "name": "I Hate",
+            "negative_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I adore"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I like"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I love"
+                }
+            ],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I abhor"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I can't stand"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I dislike"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I hate"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I reject"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I revile"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I'm disgusted by"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I'm repulsed by"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (have, had, feel, felt) (malice, malicious, disdain)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (have, had, feel, felt) [0] an [0-1] aversion"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (disgusted, repulsed) [0-2] by"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (disgusted, repulsed, repelled, reject, revile)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (find, think) [0-5] (disgusting, repulsive, awful, abhorent)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (loathe, loath, abhor, can't (bear, stand), deplore, despise, detest, hate, scorn)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] can't [0] stand"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] ~dislike"
+                }
+            ]
+        },
+        {
+            "id": "26dd2c3b-6898-4ebd-84d2-108dda859b62",
+            "inherited_intent_ids": [],
+            "name": "I Hate You",
+            "negative_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I adore you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I like you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I love you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you attract me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you make me feel great"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you make me happy"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you overjoy me"
+                }
+            ],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I abhor you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I can't stand you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I detest you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I hate you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you disgust me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you make me ill"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you make me sick"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you repell me"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (have, had, feel, felt) (malice, malicious, disdain) [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-1] (have, had, feel, felt) [0] an [0-1] aversion [0] to [0] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (disgusted, repulsed, repelled) [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (find, think, believe) [0-2] ~you [0-5] (disgusting, repulsive, awful, abhorent, ~bad)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (loathe, loath, abhor, can't (bear, stand), deplore, despise, detest, hate, scorn, ~dislike) [0] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] can't [0] stand [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] ~dislike [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] have [0] had [0] it [0-4] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] are [0-2] (disgusting, repulsive, awful, abhorent, ~bad)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0-2] (disgust, repell) [0] me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0-2] gross [0] me [0] out"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0-2] make [0] me [0] (sick, ill)"
+                }
+            ]
+        },
+        {
+            "id": "a4e06f2f-de55-4ec5-ac11-e07c657ebdaa",
+            "inherited_intent_ids": [],
+            "name": "I Like",
+            "negative_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I abhor"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I can't stand"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I dislike"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I hate"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I loathe"
+                }
+            ],
+            "output_entities": [],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I adore"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I approve"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I like"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I love"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(is, are) [0-2] (~good, perfect, special, the [0] best)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (fond [0] of, partial [0] to, all [0] about, into, delight [0] in, gratified [0] by, keen [0] on, pleased [0] by, care [0] for, pleasure [0] from, get kick out of)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (prefer, desire, wish, feel [0] disposed, preference [0] for, incline [0] toward)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (~like, approve, dig, adore, cherish, treasure, admire, fancy, relish, savor, appreciate, esteem)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~like [0] (it, them) [0]"
+                }
+            ]
+        },
+        {
+            "id": "0cde4210-5c7a-4888-a992-703d8b61c74f",
+            "inherited_intent_ids": [],
+            "name": "I Like You",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (fond [0] of, partial [0] to, all [0] about, into, delight [0] in, gratified [0] by, keen [0] on, pleased [0] by, care [0] for, pleasure [0] from, get kick out of) [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (prefer, desire, wish, feel [0] disposed, preference [0] for, incline [0] toward) [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (smitten [0] by, hooked [0] on, drawn [0] to, enchanted [0] by, sweet [0] on, glad [0] I [0] found) [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0-2] (~like, dig, adore, cherish, treasure, heart, admire, fancy, relish, savor, appreciate, esteem, approve) [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~like [0-2] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0-2] (amaze, stun, astound, astonish, electrify, impress, inspire) [0] me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0-2] (~good, perfect, special, the [0] best)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you are (~good, perfect, special, enchanting, adorable, bee's knees, cat's meow, real [0] deal, prize, treasure, [0-1] my [0] (speed, type, style), my [0] hero)"
+                }
+            ]
+        },
+        {
+            "id": "77571ea0-f56b-4d17-9e7b-2702dd05e3ed",
+            "inherited_intent_ids": [],
+            "name": "I Want",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (hunger, eager, yearn, wish, appetite, thirst, inclination, aspire, dream, long, pine) (for, to, of)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (want, desire, wish, crave, covet)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(can, may) (I, we) (have, get, git)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(could, can, might, possibly, maybe) (I, we)(get, grab, score)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(get, git, send) (me, us)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(get, make) (me, us)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(give (me, us), gimme)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(send, ship, buy) (me, us)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(slap, slide) (me, us)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "any chance (could, can, might)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hit me"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how (bout, about)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "let (me, us) (have, get)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "make [0] (with, wit, w the)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "put (up, out)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "show (me, us)"
+                }
+            ]
+        },
+        {
+            "id": "5f0f04ec-0aa4-48c2-9d93-3f4a9d802664",
+            "inherited_intent_ids": [],
+            "name": "Insults And Swearing",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(want to, will, going to, gonna) (murder, kill) [0] you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(you, this) (is, are) (dumb, stupid, ~crazy, lame, annoying, bull, crap, loser, jerk, ~ugly, whack, failure, flop, the worst)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(you, this) [0-1] (suck, blow) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "bite [0] me [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "go [0] screw [0] yourself"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "piss [0] off [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "screw [0] you [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "suck [0] my [0] (johnson, member, package)"
+                }
+            ]
+        },
+        {
+            "id": "b75b6d97-10ba-4ed3-be18-4519b2542393",
+            "inherited_intent_ids": [],
+            "name": "Length Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "LENGTH UNITS",
+                "LENGTH VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 centimeter"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 cm"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 inch"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1.5 meters"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "10 inches"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "102 yards"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "12 parsecs"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "25 centimeters"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "3 ft"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Length Value] [0] (millimeters, millimetres, \"mm\", centimetres, centimeters, \"cm\", \"inches\", \"inch\", \"in\", \"feet\", \"foot\", \"ft\", meters, metres, \"m\", yards, \"yd\", miles, \"m\", kilometers, kilometres, \"km\", \"cubit\", furlongs, leagues, fathoms, parsecs [1=Length Units])"
+                }
+            ]
+        },
+        {
+            "id": "8ca24050-b120-4d7a-848f-ed1d2090657b",
+            "inherited_intent_ids": [],
+            "name": "Menu Command",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(hear, listen, go) [0-2] (menu, options)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(take, get) [0-1] back menu"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(tell, repeat, reiterate, list, what) [0-1] (of, my) [0] options"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(tell, say, what) (menu, options) again"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(top, first, initial) [0] (menu, options)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "main [0] (menu, options)"
+                }
+            ]
+        },
+        {
+            "id": "60b193cb-42fd-45bf-afb4-53185d05dda3",
+            "inherited_intent_ids": [],
+            "name": "More Information",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(more, additional, extra, detailed) [0] (information, info, details)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(tell, give, explain, articulate, show, provide, have, need, want, desire, request) [0-2] more [0] (information, info, details)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(what, tell, say, give, explain, articulate, show, provide, read) fine [0] print"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "tell [0] me [0] more"
+                }
+            ]
+        },
+        {
+            "id": "d9d05d22-9515-4883-9995-5fe224366a52",
+            "inherited_intent_ids": [],
+            "name": "Move On To Next",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "another [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "continue [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "fast [0] forward"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "jump [0] (ahead, to next)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "jump [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "keep [0] going"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "move [0] (on, forward)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "next [0] (one, step, option, part, section)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "next [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "skip [0] (ahead, to next)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "skip [end]"
+                }
+            ]
+        },
+        {
+            "id": "5b52ebb8-8f51-406c-844b-47f5ab6d448d",
+            "inherited_intent_ids": [],
+            "name": "Name Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "NAME"
+            ],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(hi, hello, hey) [0] I'm [1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] am [0] called [1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] am [1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I'm [1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[1=NAME] is [0] my [0] name"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "my [0] name [0] is [1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "name's [1=NAME]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "this [0] is [1=NAME]"
+                }
+            ]
+        },
+        {
+            "id": "1d1c4baf-5bfd-448c-bcb7-f773c9236ac2",
+            "inherited_intent_ids": [],
+            "name": "Need Help",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (need, want, desire, request, demand, require) ~help"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(give, offer) (me, us) ~help"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] help [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~help [0] (me, us)"
+                }
+            ]
+        },
+        {
+            "builtin_name": "AMAZON.CancelIntent",
+            "id": "a4ab9598-b63f-491f-9661-43121bb3830a",
+            "inherited_intent_ids": [],
+            "name": "New Intent",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"new intent\""
+                }
+            ]
+        },
+        {
+            "builtin_name": "AMAZON.HelpIntent",
+            "id": "5c1d58bc-9bc5-4a7a-959f-f38619a74628",
+            "inherited_intent_ids": [],
+            "name": "New Intent 2",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"new intent 2\""
+                }
+            ]
+        },
+        {
+            "builtin_name": "AMAZON.StartOverIntent",
+            "id": "b97c7aea-79b7-4095-a133-8a672199caa1",
+            "inherited_intent_ids": [],
+            "name": "New Intent 3",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"new intent 3\""
+                }
+            ]
+        },
+        {
+            "builtin_name": "AMAZON.StopIntent",
+            "id": "f1e0f52a-c559-4c41-94b2-6f769d0b32c1",
+            "inherited_intent_ids": [],
+            "name": "New Intent 4",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"new intent 4\""
+                }
+            ]
+        },
+        {
+            "builtin_name": "AMAZON.RepeatIntent",
+            "id": "25cd0e6b-1ff9-4193-b297-caf240e2d7fd",
+            "inherited_intent_ids": [],
+            "name": "New Intent 5",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 0,
+                    "value": "\"built in repeat\""
+                }
+            ]
+        },
+        {
+            "id": "910f4c15-43a7-4c59-bd1f-dac57603029a",
+            "inherited_intent_ids": [],
+            "name": "No Factual",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] don't [0] think [0] so"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (~no, nope, nah, negative) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "anything [0] but"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] way"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not ([0] really, [0] right, [0] true)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "wrong"
+                }
+            ]
+        },
+        {
+            "id": "d3087f94-35e3-45fa-a91f-ec034c02224a",
+            "inherited_intent_ids": [],
+            "name": "No Opinion",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] don't ([0] think [0] so, [0] want)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (no, nope, nah) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no ([0] thank [0] you, [0] thanks)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] please"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] way"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not ([0] now, [0] really, [0] right [0] now)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "please ([0] don't, [0] no)"
+                }
+            ]
+        },
+        {
+            "id": "85c8c37f-490f-4705-a525-18eb0c261e22",
+            "inherited_intent_ids": [],
+            "name": "No Problem",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "ain't [0] no [0] (thing, thang)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "it's [0] nothing"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] (worry, worries, problem, problemo, big [0] (deal, whoop), biggie, biggy, sweat)"
+                }
+            ]
+        },
+        {
+            "id": "8079d55f-1901-4e85-acc1-262043571bd0",
+            "inherited_intent_ids": [],
+            "name": "Not Trying To Be Rude",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(aim, goal, desire, intention, intent, objective, plan, purpose, wish) not (rude, disruptive, mean, annoying, obnoxious, boorish, crude, impolite, insulting, obscene, vulgar, intrusive, bad mannered, discourteous, impertinent, inconsiderate, uncivilized, unmannerly, offend, annoy, antagonize, exasperate, disturb, irritate, provoke, faux pas, jerk)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "my [0] bad $"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not (mean, intend, try, trying, attempt, attempting, going for) (rude, disruptive, mean, annoying, obnoxious, boorish, crude, impolite, insulting, obscene, vulgar, intrusive, bad mannered, discourteous, impertinent, inconsiderate, uncivilized, unmannerly, offend, annoy, antagonize, exasperate, disturb, irritate, provoke, faux pas, jerk)"
+                }
+            ]
+        },
+        {
+            "id": "0cc49a04-af30-485a-9de4-2af82edb8605",
+            "inherited_intent_ids": [],
+            "name": "Percent Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "PERCENT VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "10 %"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "10%"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "100 percent"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=0+=Percent Value] [0] (percent, \"%\")"
+                }
+            ]
+        },
+        {
+            "id": "a55695d7-545b-4dcd-8853-294fe8f7d82e",
+            "inherited_intent_ids": [],
+            "name": "Purchase Confirmation",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (will, shall) (have, order, take, request) (it, that, them)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(give, get, git, gimme, ship, grab, send, order, buy) (it, that, them) [0-1] (me, us)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(give, get, git, gimme, ship, grab, send, order, buy) [0-1] (me, us) (it, that, them)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(purchase, buy, order, confirm) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(purchase, buy, order, confirm, take, get) [0] (it, that, them)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(that is, sounds) [0-1] (right, correct, good)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] ~yes [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "go [0] for [0] it [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "let's [0] do [0] it [end]"
+                }
+            ]
+        },
+        {
+            "id": "ceb0e3a2-c19b-483b-bb18-a470fdc56d61",
+            "inherited_intent_ids": [],
+            "name": "Quit",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I'm, we're) [0] (done, finished)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] done [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] end [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] finish [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] quit [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] stop [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "get [0] me (out of, outta) [0] (here, this)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "how [0-3] (get [0] out, stop, quit, end, finish)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "that's [0] (it, all, everything)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not play [0] (anymore, any (more, longer))"
+                }
+            ]
+        },
+        {
+            "id": "17d23e44-d749-459c-a7c4-8ca67c7ece57",
+            "inherited_intent_ids": [],
+            "name": "Repeat Question",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "come [0] again"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "repeat [0-1] (question, that, what [0-2] said, choices, options)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "say [0-1] (again, one [0] more, once [0] more)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0-1] (was, were) [0-2] (question, that, choices, options)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0-1] you [0] say"
+                }
+            ]
+        },
+        {
+            "id": "48e0ce44-7a43-4a0f-b080-a3acb83f736a",
+            "inherited_intent_ids": [],
+            "name": "Speed Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "SPEED UNITS",
+                "SPEED VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 kph"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "10.2 m/s"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "100 miles per hour"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "3 mph"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "60 kilometers per hour"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "Mach 2"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(mach [1=Speed Units]) [0] [number=Speed Value]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Speed Value] [0] (\"mph\", miles per hour, \"miles/hour\", \"miles/hr\", kilometers per hour, kilometres per hour, \"kph\", \"km/hour\", \"km/h\", \"km/hr\", meters per second, metres per second, meters per sec, metres, per sec, \"m/s\", knots [1=Speed Units])"
+                }
+            ]
+        },
+        {
+            "id": "a0570f7d-67e2-492a-802b-93878ca11f22",
+            "inherited_intent_ids": [],
+            "name": "Start Over",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(start, begin) [0-1] (experience, conversation, game, chat, interaction, this, process) [0] (over, again)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(start, begin) [0] (at, from) [0-2] (beginning, top)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "begin [0] again [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "go [0] from [0] (the [0] top, top)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "go [0] to [0-2] (beginning, top, start)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "restart [0-1] (experience, conversation, game, chat, interaction, this, process)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "restart [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "start [0] (over, again) [0-1]"
+                }
+            ]
+        },
+        {
+            "id": "78e99ab5-1b18-482a-873c-a954eac5113f",
+            "inherited_intent_ids": [],
+            "name": "Stop Talking",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(Shut, zip, can, cork, button, close, mute) [0-2] (up, mouth, it, face, trap, lips) [0-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(sick, tired, fed [0] up, bored, annoyed, annoying, irked, irritated, irritating, done, ~dislike) (~talk [0] to, hear, listen [0] to) [0-2] you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0-4] (stop, quit, cease, halt, refrain) [0-1] (~talk, mouthing [0] off) [0-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0-4] be [0-3] (quiet, silent) [0-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] (quiet, hush, shush, silence) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "hold [0] your [0-3] tongue"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "keep [0] your [0-3] (trap, mouth, lips) [0] (shut, zipped)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "put [0-1] (cork, plug, lid) [0] (on, in) [0] it"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "someone [0] (should, needs [0] to) [0-2] (shut, muzzle) [0] you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0-1] (~talk) [0-1] too [0-1] much"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] (need, could [0] use) [0-2] muzzle"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0-1] (~want, wanna, like, enjoy) [0-1] (~talk [0] to, hear, listen [0] to) you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0] be [0-4] (blabbermouth, blabber [0] mouth)"
+                }
+            ]
+        },
+        {
+            "id": "44fc7a5f-3470-48f9-8042-e1a23d1c34b4",
+            "inherited_intent_ids": [],
+            "name": "Store Locator",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(closest, nearest, nearby, near [0] by, local) [0] (location, store)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(location, store) ((close, near) to me, in my area, by me)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(location, store) (nearby, near [0] by)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "store [0] locator"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "where [0] is [0-2] (location, store)"
+                }
+            ]
+        },
+        {
+            "id": "0a735bbe-7573-413b-b231-2351adc794b4",
+            "inherited_intent_ids": [],
+            "name": "Talk To A Real Person",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(speak, talk, chat, connect) (person, human)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "customer [0] support"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "human [0] (person, chat, support, operator, agent)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "human [0] being"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "human [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "live [0] (person, chat, support, operator, agent)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "operator [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "person [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "real [0] person"
+                }
+            ]
+        },
+        {
+            "id": "40ecb2e3-48f1-4e27-a9b5-10abc0d87f33",
+            "inherited_intent_ids": [],
+            "name": "Tell Me More",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(don't [0] stop, keep, continue) [0] (going, talking, telling)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(want, need, desire, like) [0-1] more [0] (information, info, details, deets)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(want, need, desire, like) [0] to [0] know [0] more"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] Okay [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] alright [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] right [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] yah [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] yeah [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "go [0] on [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "oh [0] boy [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "oh [0] my [0] god [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "so [0] what [0] happened [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "tell [0] me [0] more"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "then [0] what [0] happened"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0] happened [0] next"
+                }
+            ]
+        },
+        {
+            "id": "d14c4e84-0283-47c5-a643-0bd63740ea52",
+            "inherited_intent_ids": [],
+            "name": "Temperature Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "TEMPERATURE UNITS",
+                "TEMPERATURE VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 deg F"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "100 deg C"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "25 celsius"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "254 Kelvin"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "98 F"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Temperature Value] [0] ?degrees ?deg (\"F\", \"C\", \"fahrenheit\", \"celsius\", \"kelvin\" [1=Temperature Units])"
+                }
+            ]
+        },
+        {
+            "id": "da24ccc3-3120-45e4-b9d6-5de204592a9a",
+            "inherited_intent_ids": [],
+            "name": "Thank You",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(~you [0] are, ~your) [0] the [0-1] best"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "cheers [0-1]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "gracias"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "i [0] am (grateful, thankful)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "i [0] owe [0] ~you [0] one"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "many [0] thanks"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "thank [0] goodness"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "thank [0] you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0] would [0] (I, we) [0] do [0] without [0] ~you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] have [0] my [0-1] (thanks, gratitude)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not do [0] it [0] without [0] you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~thanks [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0] are [0] a [0-1] (life saver, lifesaver)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~you [0] saved [0] my [0-1] life"
+                }
+            ]
+        },
+        {
+            "id": "57958660-1f7c-47cd-ae71-ba9e85013bfe",
+            "inherited_intent_ids": [],
+            "name": "That Is Correct",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(you're, that's, it's) [0-1] (right, correct, true, truth, accurate, exactly it, precisely it, on the nose, spot on, bang on, just it)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (right, correct, true, truth, accurate, exactly, precisely, totally, totes, perfect, absolutely, affirmative, ~yes) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "nailed [0] it [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "right [0] on [0] the [0] nose"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "spot [0] on [end]"
+                }
+            ]
+        },
+        {
+            "id": "a99c1eca-7075-4896-bc5f-3b293435e5e3",
+            "inherited_intent_ids": [],
+            "name": "That Is Wrong",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(absolutely, certainly, surely) [0] not [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(messed, screwed) [0-1] up [0] big [0] time"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(messed, screwed) [0] (that, it) [0] up"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0-2] wrong [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (~no, ~never) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "got [0] it [0-1] wrong"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] way [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "not [0] what [0] I [0] said"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "that's [0-2] (wrong, incorrect, not right, off, inaccurate, impossible, not [0] possible)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "there's [0] no [0-1] way (that's, it's) [0] (right, correct, accurate)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you're [0-2] (wrong, incorrect, not right, off, inaccurate)"
+                }
+            ]
+        },
+        {
+            "id": "21354375-edb5-454c-893a-ed14ba722428",
+            "inherited_intent_ids": [],
+            "name": "Track Order",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(track, follow, see) (my, the) [0] (order, package, shipment)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "track [0-1] (order, package, shipment) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "when (will, is, shall) [0] (my, the) (order, package, shipment) (arrive, get here, land, show up)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "where's [0] (my, the) [0] (order, package, shipment)"
+                }
+            ]
+        },
+        {
+            "id": "dc828ca4-a32f-419b-bee6-6434cd20a022",
+            "inherited_intent_ids": [],
+            "name": "Volume Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "VOLUME UNITS",
+                "VOLUME VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 fluid ounce"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 gallons"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "3 pints"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Volume Value] [0] (liters, liters, fluid ounces, \"fl ozs\", \"fl oz\", pints, milliliters, millilitres, cups, gills, quarts, gallons, pecks, bushels, teaspoons, tablespoons [1=Volume Units])"
+                }
+            ]
+        },
+        {
+            "id": "62857125-8571-4b6c-978e-e17179641f2f",
+            "inherited_intent_ids": [],
+            "name": "Want To Exchange",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) [0] have [0-2] to [0] exchange"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(aitem, thing, something) [0] to [0] exchange"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(request, get, process, place) [0] an [0] exchange"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(want, need, like) [0] to [0] exchange [0-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "exchange [0-2] (item, thing, something)"
+                }
+            ]
+        },
+        {
+            "id": "f2304ac9-cc7b-46ea-ba45-ae56c90b66a6",
+            "inherited_intent_ids": [],
+            "name": "Want To Log Complaint",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) [0] have [0-2] (complaint, criticism, feedback, problem, issue, concern)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(log, file, set, put, record, mark, report, register, book, catalog, transcribe) [0-1] (complaint, criticism, feedback, problem, issue, concern)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (complaint, criticism, feedback, problem, issue) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "something [0] is [0-1] (wrong, the matter)"
+                }
+            ]
+        },
+        {
+            "id": "4b587ce3-ae66-485b-82a6-81dffb6a9263",
+            "inherited_intent_ids": [],
+            "name": "Want To Purchase",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) (want, need, desire, request, wish, like) (buy, purchase, get, order)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(an item, items, a few things, something, a thing, things) [0] to [0] (buy, purchase, get, order)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(purchase, buy, get, order) [0] something [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "make [0] a [0] purchase"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "place [0] an [0] order"
+                }
+            ]
+        },
+        {
+            "id": "952134e0-0072-468f-8dfa-d13f329d3e62",
+            "inherited_intent_ids": [],
+            "name": "Want To Return",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(I, we) [0] have [0-2] to [0] return"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(item, thing, something) [0] to [0] return"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(request, get, process, place, initiate) [0] a [0] return"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(want, need, like) [0] to [0] return [0-3]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "return [0-2] (item, thing, something)"
+                }
+            ]
+        },
+        {
+            "id": "eaefe632-68cc-4728-b574-fc5b0876f0a9",
+            "inherited_intent_ids": [],
+            "name": "Weight Provided",
+            "negative_examples": [],
+            "output_entities": [
+                "WEIGHT UNITS",
+                "WEIGHT VALUE"
+            ],
+            "positive_examples": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 kilogram"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "1 tonne"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "10 kg"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "3 tons"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "3.5 stones"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "one pound"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "ten kilograms"
+                }
+            ],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[number=Weight Value] [ 0 ] (\"kg\", kilograms, \"lbs\", pounds, stones, ounces, \"oz\", \"ozs\", tons, \"ton\", tonnes, newtons, cubic centimeters, cubic centimetres, \"cc\", milliliters, millilitres, \"ml\" [1=Weight Units])"
+                }
+            ]
+        },
+        {
+            "id": "852a743d-3eb8-4503-970f-070b47fc07b8",
+            "inherited_intent_ids": [],
+            "name": "What Do You Mean",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(what, how) [0] (do [MATCH=0-1]) [0-1] you [0-1] mean"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "explain (to [0-1] me, that [0] (again, one more time))"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "tell [0] me [0-3] (why, your [0] thoughts, your [0] meaning, thinking, talk, more)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0] (is, are) [0-3] you [0-3] (get, say, tell, talk)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0] are [0] you [0-3] (say, talk, convey, maintain, express, suggest, tell, imply, get [0] at, yak)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "what [0] is [0-1] your [0] meaning"
+                }
+            ]
+        },
+        {
+            "id": "845a2a71-a5d5-4251-9d49-ee238d54f765",
+            "inherited_intent_ids": [],
+            "name": "Yes Factual",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(totally, totes) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I ([0-1] say, [0-1] think) [0] so"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I ([0] guess, [0] suppose) ([0] so [Match=0-1])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] do [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "absolutely"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "affirmative"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "correct"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "definitely"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "exactly"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "got [0] it [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "no [0] ifs [0] ands [0-1] buts"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "on [0] the [0] (money, nose)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "one [0] hundred [0] percent"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "precisely"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "probably"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "right"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "sure"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "true"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~yes"
+                }
+            ]
+        },
+        {
+            "id": "02f0ee58-4130-43ab-9779-4d3011bd0c3a",
+            "inherited_intent_ids": [],
+            "name": "Yes Opinion",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(alright, all [0] right)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(looks, sounds) [0-1] ~good"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I ([0] guess, [0] suppose) ([0] so [Match=0-1])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I ([0] sure [Match=0-1]) [0] do"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "I [0] would [0] say [0] so"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] cool [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (k, ok, okay) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (totes, totally) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[start] (ya, yah, yeah, yep, ~yes, yup) [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "absolutely"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "affirmative"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "can't [0] wait"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "definitely"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "fine [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "go [0] ahead"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "got [0] it [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "please"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "probably"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "right [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "sure"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~yes"
+                }
+            ]
+        },
+        {
+            "id": "84c16ead-0a7a-4b9e-8abb-eb4eb48ef422",
+            "inherited_intent_ids": [],
+            "name": "You Are Joking",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(are [MATCH=0-1]) (you, you're) (kid, kidding, serious, ~crazy, joke, joking, play, playing, ~tease, teasing) (with, me [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(not [MATCH=0-1]) (be, get) [0] serious"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(stop, ~not) [0-1] (~tease, teasing, play, playing) (with, me [MATCH=0-2])"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "(that's, this [0] is) (~crazy, ridiculous, bizarre, wild, ~unbelievable)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] no [0-1] way"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] please [end]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] shut [0] up [0]"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "[0] stop [0] (it, that)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "come [0] on"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "don't [0-1] believe [0] you"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "get [0] out [0] of (here, town)"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "oh [0] please"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "shut [0] the [0] front [0] door"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~not [0] (be [0-1] ridiculous, ~crazy)"
+                }
+            ]
+        },
+        {
+            "id": "470bd14f-7466-414c-b786-b26299df423b",
+            "inherited_intent_ids": [],
+            "name": "You Choose",
+            "negative_examples": [],
+            "output_entities": [],
+            "positive_examples": [],
+            "rules": [
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0-2] to [0] do"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0-2] to [0] name"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] choose"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] come up"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] decide"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] do [0] it"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] invent"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] make [0-1] up"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] make [0] one"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] pick"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] think [0] of"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "you [0] think [0] up"
+                },
+                {
+                    "enabled": true,
+                    "source": 2,
+                    "value": "~your [0] (choice, decision, move)"
+                }
+            ]
+        }
+    ]
+}

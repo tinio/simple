@@ -1,0 +1,15 @@
+# ToyTalk Project V2.8
+{
+    "counters": [
+        "Currency Value",
+        "Duration Value",
+        "Length Value",
+        "Number",
+        "Percent Value",
+        "Speed Value",
+        "Temperature Value",
+        "Volume Value",
+        "Weight Value"
+    ],
+    "decaying_counters": []
+}

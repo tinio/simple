@@ -1,0 +1,16 @@
+# ToyTalk Category V2.7
+{
+    "type": "override",
+    "entries": [
+        {
+            "id": "214596ba-52d5-4b7a-b8fb-0556ba96b45a",
+            "metadata": {}
+        },
+        {
+            "id": "24c2cc85-c476-4e32-be73-3622e7cbddea",
+            "metadata": {
+                "value": "Untitled Activity"
+            }
+        }
+    ]
+}

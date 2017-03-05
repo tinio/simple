@@ -1,0 +1,27 @@
+# ToyTalk Category V2.7
+{
+    "type": "main",
+    "abbreviation": "",
+    "entries": [
+        {
+            "id": "214596ba-52d5-4b7a-b8fb-0556ba96b45a",
+            "type": "event",
+            "metadata": {
+                "event_id": "event_start"
+            }
+        },
+        {
+            "id": "24c2cc85-c476-4e32-be73-3622e7cbddea",
+            "type": "activity",
+            "metadata": {
+                "activity_params": "default=yes;global_ruleset=yes"
+            }
+        }
+    ],
+    "structure": [
+        "24c2cc85-c476-4e32-be73-3622e7cbddea",
+        [
+            "214596ba-52d5-4b7a-b8fb-0556ba96b45a"
+        ]
+    ]
+}

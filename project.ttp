@@ -1,0 +1,24 @@
+# ToyTalk Project V2.8
+{
+    "audio_package_mode": "none",
+    "categories": [
+        "Global Interjections",
+        "Greeting",
+        "Goodbyes"
+    ],
+    "default_language": "en-US",
+    "ducking_level": "-14",
+    "id": "8685e038-d071-4be5-a442-ac36b4787d26",
+    "languages": [
+        "en-US"
+    ],
+    "luis_min_confidence": 0.0,
+    "name": "Simple Alexa Skill",
+    "project_platform": "platform_alexa",
+    "project_type": "text",
+    "require_approval": false,
+    "resolutions": [],
+    "strip_notes": false,
+    "template_used": "Simple Alexa Skill",
+    "wit_min_confidence": 0.0
+}
