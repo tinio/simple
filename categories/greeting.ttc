@@ -11,6 +11,13 @@
             }
         },
         {
+            "id": "14c112ca-8010-453a-b163-339414adc097",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "alexa_exit_skill"
+            }
+        },
+        {
             "id": "18e13b22-7eb1-4659-b605-9931c3875f94",
             "type": "intent",
             "metadata": {
@@ -44,9 +51,21 @@
             "metadata": {}
         },
         {
-            "id": "3b69e759-2b12-4f26-929b-3fb37b483cf2",
-            "type": "fallback",
-            "metadata": {}
+            "id": "3b3ee81c-755f-4bc1-9c29-e4db281cecc6",
+            "type": "behavior",
+            "metadata": {
+                "behavior_id": "web_service",
+                "behavior_params": {
+                    "code": "",
+                    "embed_code": "no",
+                    "name": "Get City of Long Beach Calendar",
+                    "param": [],
+                    "result": [
+                        "LABEL_EVENTS"
+                    ],
+                    "url": "https://ziz5kwyija.execute-api.us-east-1.amazonaws.com/prod/getLbcCalendar"
+                }
+            }
         },
         {
             "id": "430f56a2-94c1-4066-a0c0-a0dc40ac7d6c",
@@ -54,16 +73,6 @@
             "metadata": {
                 "mode": "no_return",
                 "reference_id": "cc1c638b-2a76-4bf4-a5cb-9a0964ffc949"
-            }
-        },
-        {
-            "id": "49204f37-779a-4e3e-94c5-624cad8bb049",
-            "type": "behavior",
-            "metadata": {
-                "behavior_id": "action_set_flag",
-                "behavior_params": {
-                    "flag": "FLAG_IN_ONE_SHOT_MODE"
-                }
             }
         },
         {
@@ -79,11 +88,11 @@
             }
         },
         {
-            "id": "90eef0ed-f945-47c4-af97-ffccf562eebb",
-            "type": "reference",
+            "id": "8e527515-43ad-405f-b1ab-1ee79e30eeee",
+            "type": "response",
             "metadata": {
-                "mode": "no_return",
-                "reference_id": "f38ff117-7a62-4ec5-868c-25feeb06bdff"
+                "character": "1",
+                "condition": "label events != \"\""
             }
         },
         {
@@ -122,16 +131,6 @@
             }
         },
         {
-            "id": "ceac5af8-6287-4676-8d9e-5bfd2a5ab07b",
-            "type": "behavior",
-            "metadata": {
-                "behavior_id": "action_clear_flag",
-                "behavior_params": {
-                    "flag": "FLAG_IN_ONE_SHOT_MODE"
-                }
-            }
-        },
-        {
             "id": "df06c872-9437-402c-950a-4392384a65d0",
             "type": "fallback",
             "metadata": {}
@@ -162,14 +161,11 @@
         [
             "12e2becd-c751-4505-b9e5-4ff46eb1ea8f",
             [
-                "49204f37-779a-4e3e-94c5-624cad8bb049",
+                "3b3ee81c-755f-4bc1-9c29-e4db281cecc6",
                 [
-                    "3b69e759-2b12-4f26-929b-3fb37b483cf2",
+                    "8e527515-43ad-405f-b1ab-1ee79e30eeee",
                     [
-                        "ceac5af8-6287-4676-8d9e-5bfd2a5ab07b",
-                        [
-                            "90eef0ed-f945-47c4-af97-ffccf562eebb"
-                        ]
+                        "14c112ca-8010-453a-b163-339414adc097"
                     ]
                 ]
             ]

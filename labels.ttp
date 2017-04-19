@@ -3,6 +3,7 @@
     "labels": [
         "Currency Units",
         "Duration Units",
+        "Events",
         "Length Units",
         "Location",
         "Name",

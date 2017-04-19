@@ -20,5 +20,8 @@
     "resolutions": [],
     "strip_notes": false,
     "template_used": "Simple Alexa Skill",
+    "typing_indicator_max_ms": 2500,
+    "typing_indicator_min_ms": 50,
+    "typing_indicator_per_word_ms": 400,
     "wit_min_confidence": 0.0
 }
